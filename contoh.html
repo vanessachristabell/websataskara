@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="Kara.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Web SAT ASKARA</title>
+        <style>
+
+            .layout {
+            display: grid;
+            grid-template-rows: repeat(3, 0.5fr);
+            grid-template-columns: repeat(2, 0.5fr);
+            gap: 15px;
+            position: relative;
+            margin-left: 245px;
+            margin-top: 275px;
+            margin-bottom: 50px;
+            text-align: center;
+            }
+            
+            .grid-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 325px;
+            height: 200px;
+            border-radius: 10px;
+            }
+
+            h3 {
+            margin-top: 20px;
+            font-size: 22px;
+            color:rgb(88, 102, 97);
+            }
+
+            .h33{
+                margin-top: 20px;
+            font-size: 15px;
+            color:rgb(88, 102, 97);
+            }
+
+            .cont {
+            background-color: #ceeee3;
+            height: 312px;
+            width: 400px;
+            justify-content: space-between;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            }
+
+            .pop-cont {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.5);
+            width: 300px;
+            height: 250px;
+            z-index: 11;
+            background: #ceeee3;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            display: none;
+            }
+
+            .pop {
+            background-color: white;
+            width: 600px;
+            max-width: 100%;
+            padding: 15px 30px;
+            border-radius: 5px;
+            height: 100%;
+            overflow: scroll;
+            z-index: 1002;
+            }
+
+            .pop h3 {
+            margin: 0;
+            margin-bottom: 15px;
+            }
+
+            .pop p {
+            font-size: 10px;
+            opacity: 0.7;
+            display: block;
+            text-align: justify;
+            }
+
+            .close {
+            position: fixed;
+            top: 15%;
+            left: 10%;
+            background: red;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            }
+
+    .open {
+    background-color: #ceeee3;
+    }
+        </style>
+    </head>
+
+
+    <body>
+        <Header>
+            <div class="Header1">
+                <img class="header1" src="banner SAS.png">
+            </div>
+            <h1>Pola Hidup Sehat</h1>
+            <h2>- Kelompok 2 ASKARA</h2>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <a class="dropbtn" href="index.html">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Profile</a>
+                        <a href="index.html">Pendahuluan</a>
+                    </div>
+                </div>
+
+                <a href="peng.html">Pengertian</a>
+
+                <a href="manfaat.html">Manfaat</a>
+
+                <a class="dropbtn" href="contoh.html">Contoh</a>
+
+                <a href="daftarpustaka.html">Daftar Pustaka</a>
+            </nav>
+        </Header>
+
+        <main>
+            <section class="layout">
+
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam2.jpg" class="grid-img"> 
+                    <h3 >Rajin Berolahraga</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33" >Rajin Berolahraga</h3>
+                    <p>Rutinitas olahraga yang baik juga dapat meningkatkan daya tahan tubuh. Olahraga dapat dilaksanakan 
+                        dalam berbagai cara, sekarang terdapat olahraga yang dapat dilaksanakan di rumah saja, dan juga ada 
+                        olahraga yang membutuhkan pergi keluar, serta cara berolahraga lainnya. Olahraga dapat berupa hal yang 
+                        simpel seperti jalan kaki keliling kompleks rumah, senam lantai, yoga, angkat beban (tidak harus barbel, 
+                        juga dapat berupa hal simpel seperti botol minum yang terisi air), dan masih banyak lagi contohnya.
+                    </p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam3.jpg" class="grid-img"> 
+                    <h3>Memakan Makanan Sehat</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Memakan Makanan Sehat</h3>
+                    <p>Mendapat gizi dan vitamin yang kami tubuh butuhkan sangat penting dalam mencapai pola hidup sehat karena 
+                        untuk mencapai pola hidup yang sehat kami harus mendapat asupan gizi yang fit supaya tubuh kami dapat 
+                        menghindari dari penyakit-penyakit yang dapat menyerang tubuh. Tubuh manusia membutuhkan beberapa kandungan 
+                        gizi dalam makanannya seperti karbohidrat, lemak, dan protein, serta vitamin, mineral, dan serat. Walaupun 
+                        begitu, tetapi makan makanan yang tidak bergizi seperti junk food juga masih boleh, tetapi tidak sering-sering.
+                    </p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam4.jpg" class="grid-img"> 
+                    <h3>Mengelola Stress</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Mengelola Stress</h3>
+                    <p>Perceraian stres berjangka panjang akan menurunkan daya tahan tubuh sehingga membuat manusia lebih mudah 
+                        sakit sehingga kami harus mengelola stres sehingga tidak berlebihan dan juga berpikir secara positif. 
+                        Kami juga harus menjauh atau mengatasi penyebab stres itu supaya pikiran dan hati terasa lebih lega. </p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam7.jpg" class="grid-img">
+                    <h3>Memperbanyak minum air putih</h3> 
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Memperbanyak minum air putih</h3>
+                    <p>Selain mengonsumsi makanan bergizi, asupan air juga cukup penting untuk mendukung metabolisme dan 
+                        kesehatan tubuh sehingga dapat menjaga daya tahan tubuh. Biasanya orang bilang bahwa kami harus minum 
+                        air putih sebanyak 8 gelas sehari, dimana yang lebih tepat adalah bahwa kami harus minum air minimal 
+                        2 liter sehari sehingga tubuh kita masih tetap bekerja secara sehat dan terhindar dari resiko dehidrasi 
+                        dan penyakit lainnya.</p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+                
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam6.jpg" class="grid-img"> 
+                    <h3>Mengurangi Konsumsi Gula dan Garam</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Mengurangi Konsumsi Gula dan Garam</h3>        
+                    <p>Meskipun gula dan garam salah satu komponen yang harus dipenuhi manusia dengan alasan untuk menyeimbangkan 
+                        dan mengoptimalkan kesehatan tubuh, tetapi jika gula dan garam dikonsumsi berlebihan dapat menyebabkan orang 
+                        tersebut  mengalami penuaan, peradangan dan masalah kesehatan lainnya. Manusia tetap disarankan untuk 
+                        mengkonsumsi gula dan garam per harinya yaitu 50 gram atau setara dengan 4 sendok makan gula dan 5 gram atau 
+                        setara dengan 1 sendok teh garam tidak diperkenankan lebih atau kurang dari standar yang telah ditetapkan.  
+                    </p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam5.jpg" class="grid-img"> 
+                    <h3>Istirahat yang Cukup</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Istirahat yang Cukup</h3>
+                    <p>Setiap orang pasti memerlukan istirahat yang cukup supaya dapat bekerja secara optimal saat beraktivitas di 
+                        pagi dan siang hari. Oleh karena itu, kami harus beristirahat dengan cukup. Selain untuk dapat bekerja 
+                        secara optimal, tidur juga sangat dibutuhkan dalam proses regenerasi sel dan memberikan waktu istirahat 
+                        untuk organ tubuh kita untuk beristirahat. Kekurangan tidur dapat menyebabkan daya tahan tubuh untuk menurun, 
+                        bad mood, dan kurang fokus sehingga kami dianjurkan untuk tidur minimal 8 jam sehari untuk menjaga kondisi 
+                        fisik dan mental kita sehingga optimal.</p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="cont">
+                    <button class="open" onclick="bukaPop(this)">
+                    <img src="gam8.jpg" class="grid-img"> 
+                    <h3>Menghentikan Kebiasaan Buruk</h3>
+                    </button>
+
+                    <div class="pop-cont">
+                    <div class="pop">
+                    <h3 class="h33">Menghentikan Kebiasaan Buruk</h3>
+                    <p>Terdapat beberapa kebiasaan buruk yang banyak orang lakukan yang merusak daya tahan tubuh. Contohnya 
+                        mengonsumsi minuman keras secara berlebihan, merokok, begadang sampai malam, malas bergerak, dan 
+                        mengonsumsi junk food yang berlebihan. Mengonsumsi minuman keras tidak kenapa-napa kalau dilihat masih 
+                        bisa dikontrol. Merokok dapat mengurangi daya tahan tubuh dengan merusak organ tubuh kami berupa paru-paru 
+                        sehingga membuatnya lebih mudah untuk diserang oleh penyakit kanker paru-paru. Begadang sampai malam dapat 
+                        merusak organ tubuh kami karena kekurangan istirahat sehingga organ kami bekerja secara berlebihan. Malas 
+                        bergerak juga dapat mengurangi daya tahan tubuh kami karena dengan kekurangannya bergerak, stamina dan 
+                        kebugaran jasmani kami juga tidak terlatih sehingga lebih mudah untuk capai dan sakit. Makan junk food 
+                        secara berlebihan dapat mengurangi asupan gizi yang tubuh kami menerima sehingga tubuh kami tidak mendapat 
+                        asupan gizi yang optimal untuk menjaga daya tahan tubuh kami sehingga lebih mudah sakit. Walaupun begitu, 
+                        makan junk food yang tidak berlebihan masih boleh karena kalau kami tidak mengonsumsinya secara 
+                        berlebihan/sering-sering, maka kami juga mendapat asupan gizi dari makanan kita yang lain yang mengandung 
+                        asupan gizi yang tubuh kami butuhkan.
+                    </p>
+                    <button class="close" onclick="tutupPop(event, this)"> X </button>
+                    </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js">
+        </script>
+    </body>
+
+</html>

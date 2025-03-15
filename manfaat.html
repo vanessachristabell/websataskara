@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web SAT ASKARA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Kara.png">
+</head>
+
+<script>
+    function fadeInElements() {
+        document.querySelectorAll(".column.side, .column.middle").forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            setTimeout(() => {
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            }, 50);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", fadeInElements);
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            setTimeout(fadeInElements, 200);
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="Header1">
+            <img class="header1" src="banner SAS.png">
+        </div>
+        <h1>Pola Hidup Sehat</h1>
+        <h2>- Kelompok 2 ASKARA</h2>
+        <nav class="navbar">
+            <div class="dropdown">
+                <a class="dropbtn" href="index.html">Home</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Profile</a>
+                    <a href="index.html">Pendahuluan</a>
+                </div>
+            </div>
+
+            <a href="peng.html">Pengertian</a>
+
+            <a href="manfaat.html">Manfaat</a>
+
+            <a href="contoh.html">Contoh</a>
+
+            <a href="daftarpustaka.html">Daftar Pustaka</a>
+        </nav>
+    </Header>
+</body>
+
+</nav>
+</header>
+<div class="container">
+    <div class="column side">
+        <img class="gam" src="gam10.webp" width="200px" height="150px">
+        <img class="gam" src="gam12.webp" width="200px" height="150px">
+        <img class="gam" src="gam13.jpg" width="200px" height="150px">
+        <img class="gam" src="gam11.jpeg" width="200px" height="150px">
+    </div>
+    <div class="column middle">
+        <h1 class="peng">Manfaat Pola Hidup Sehat</h1>
+        <p class="bold"><li class="li2">Terhindar dari Berbagai Macam Penyakit</p> → Manfaat pola hidup sehat yang pertama adalah tubuh
+            menjadi lebih sehat. Dengan rutin mengkonsumsi makanan sehat setiap hari, badan akan dipenuhi banyak nutrisi
+            dan dapat meningkatkan metabolisme serta memperkuat imun. Selain itu, kemungkinan terkena penyakit juga akan
+            berkurang. Beberapa penyakit yang bisa dihindari antara lain maag, obesitas karena makan tidak teratur,
+            migrain karena terlalu banyak begadang, dan bahkan penyakit berat seperti penyakit jantung, diabetes, dan
+            juga kanker.
+        </li>
+        <p class="bold"><li class="li2">Memiliki Banyak Energi</p> → Ketika kita menjalani pola hidup sehat dan memperhatikan apa yang
+            dimasukkan ke dalam badan kita, maka metabolisme tubuh dapat meningkat. Saat metabolisme bekerja lebih
+            cepat, badan akan memiliki lebih banyak energi yang dapat digunakan untuk melakukan aktivitas sehari-hari.
+        </li>
+        <p class="bold"><li class="li2">Meningkatkan Produktivitas</p> → Pola hidup sehat dapat membuat kita bisa melakukan kegiatan
+            sehari-hari tanpa hambatan. Mengonsumsi makanan yang bernutrisi dapat berpengaruh terhadap fungsi otak.
+            Selain menyehatkan badan, otak juga dapat berfungsi lebih optimal dan bisa melakukan aktivitas dengan lebih
+            produktif lagi.
+        </li>
+        <p class="bold"><li class="li2">Berat Badan Terjaga</p> → Menjaga makan dan rutin berolahraga dapat memberi manfaat yaitu berat
+            badan tetap ideal. Ketika berat badan terjaga, badan akan terasa lebih ringan dan tidak mudah kelelahan
+            ketika melakukan banyak aktivitas. Manfaat lainnya adalah meningkatkan kekebalan tubuh serta kesehatan
+            jantung.
+        </li>
+        <p class="bold"><li class="li2">Meningkatkan Kualitas Hidup</p> → Setelah menjalani pola hidup sehat, tubuh pasti akan terasa lebih
+            sehat. Seperti ketika berolahraga, tubuh akan mengeluarkan hormon endorfin yang dapat memicu perasaan tenang
+            dan bahagia. Dengan terpicunya hormon ini, kita akan merasa lebih positif dan semangat dalam menjalani
+            hidup. Selain itu, kesehatan mental juga akan terjaga. Rutinitas yang baik untuk menjaga kesehatan mental
+            yaitu dengan olahraga dan mencoba berbagai hal baru yang bisa menambah pengalaman dan pengetahuan. Gaya
+            hidup yang sehat mampu menyeimbangkan kesehatan jiwa dan raga, sehingga yang menjalaninya dapat sehat baik
+            jasmani dan rohani.
+        </li>
+    </div>
+    </body>
+</html>
