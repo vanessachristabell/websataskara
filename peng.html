@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web SAT ASKARA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Kara.png">
+</head>
+
+<script>
+    function fadeInElements() {
+        document.querySelectorAll(".column.side, .column.middle").forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            setTimeout(() => {
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            }, 50);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", fadeInElements);
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            setTimeout(fadeInElements, 200);
+        });
+    });
+</script>
+
+<body>
+    <Header>
+        <div class="Header1">
+            <img class="header1" src="banner SAS.png">
+        </div>
+        <h1>Pola Hidup Sehat</h1>
+        <h2>- Kelompok 2 ASKARA</h2>
+        <nav class="navbar">
+            <div class="dropdown">
+                <a class="dropbtn" href="index.html">Home</a>
+                <div class="dropdown-content">
+                    <a href='index.html'>Profile</a>
+                    <a href='index.html'>Pendahuluan</a>
+                </div>
+            </div>
+
+            <a href="peng.html">Pengertian</a>
+
+            <a href="manfaat.html">Manfaat</a>
+
+            <a class="dropbtn" href="contoh.html">Contoh</a>
+
+            <a href="daftarpustaka.html">Daftar Pustaka</a>
+        </nav>
+    </Header>
+</body>
+
+</html>
+</nav>
+</header>
+<div class="container">
+    <div class="column side">
+        <img class="gam" src="gam1.jpg" width="220px" height="220px">
+        <img class="gam" src="gam9.jpg" width="220px" height="150px">
+    </div>
+    <div class="column middle">
+        <h1 class="peng">Pengertian Pola Hidup Sehat</h1>
+        <li class="li1">Pola hidup sehat, sesuatu yang sudah diajarkan kepada kami sejak dini oleh orang tua dan dewasa
+            di sekitar kita.
+            Tapi, apakah kalian benar-benar mengerti apa itu pola hidup sehat? Sebelum mengenal pengertian pola hidup
+            sehat,
+            kita harus tau dulu pengertian dari kata “sehat”. Menurut World Health organization (WHO), sehat diartikan
+            sebagai keadaan yang sempurna baik secara fisik, mental maupun sosial – tidak hanya terbebas dari penyakit
+            atau
+            kelemahan/cacat.</li>
+        <li class="li1">Pola hidup sehat adalah suatu cara hidup atau komitmen jangka panjang seseorang yang bertujuan
+            untuk menjaga kesehatan tubuh dan mental dengan cara menjalani kehidupan yang dapat meminimalisir risiko
+            terkena penyakit serius atau kematian dini. Kalau kami singkatkan, pola hidup sehat adalah sebuah rutinitas
+            yang kami lakukan untuk menjaga kesehatan tubuh dan mental.
+            Pola hidup sehat juga merupakan gaya hidup yang memperhatikan segala aspek kondisi kesehatan seseorang
+            dengan menjaga
+            pola makan yang sehat, berolahraga secara teratur, istirahat yang cukup, dan menghindari kebiasan buruk
+            seperti
+            merokok dan minum alkohol.</li>
+        <li class="li1">Dengan menjaga pola hidup yang sehat, tentu saja dapat membantu meningkatkan kualitas hidup yang
+            dimiliki. Tubuh yang sehat dan bugar dapat membantu dalam menjalankan aktivitas sehari- hari dengan lebih
+            mudah serta dapat meningkatkan kebahagiaan dalam hidup. Tidak hanya itu, berbagai penyakit kronis dan masalah kesehatan dapat dicegah,
+            serta membantu menghindari masalah kesehatan mental seperti stres, depresi, dan sebagainya.
+           </li>
+    </div>
+    </body>
+
+    </html>
